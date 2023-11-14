@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/tariff.css">
+    <title>Тарифы</title>
+</head>
+
+<body>
+    <div class="wr">
+        <header>
+            <div class="nav_bar header__body">
+                <a href="main_page.html" class="header__logo">
+                    <img src="images/logo.svg" alt="logo_company" type="image/svg+xml">
+                </a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li><a href="main_page.html" class="header__link">Главная</a></li>
+                        <li><a href="tariffs.html" class="header__link">Тарифы</a></li>
+                        <li><a href="about_us.html" class="header__link">О нас</a></li>
+                        <li><button class="header_button">Позвонить</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="main_wr">
+            <h1 class="title tit_title">Тарифы</h1>
+            <div class="first_service service" id="anchor_corporate">
+                <div class="t_f">
+                    <div class="s_n">
+                        <div class="service_n">
+                            <h3>01.</h3>
+                            <h3>«Мы заботимся о вас»</h3>
+                        </div>
+                        <div class="service_name">
+                            <h3>Корпоративные занятия</h3>
+                        </div>
+                    </div>
+                    <div class="tar_tarifs">
+                        <div class="tariff_corporate tariff">
+                            <div class="content_tariff">
+                                <div class="chips_tariff">Корпоративные занятия</div>
+                                <h4 class="title_tariff">Базовый тариф</h4>
+                                <p class="tariff_description">
+                                    Такой формат подойдет
+                                    для государственных секторов
+                                    и для коммерческих организаций
+                                </p>
+                                <ul class="tariff_benefits">
+                                    <li>Бесплатное пробное занятие</li>
+                                    <li>от 3 до 8 человек</li>
+                                    <li>2 занятия в неделю / 8 занятий в месяц</li>
+                                    <li>выезд мануального терапевта 1 раз в год
+                                        для коррекции тренировочной программы</li>
+                                    <li>без закупки оборудования</li>
+                                </ul>
+                            </div>
+                            <div class="tarif_pb_s">
+                                <div class="card">госсектор скидка 25%</div>
+                                <div class="tariff_pb">
+                                    <h2 class="price"> 18 000 ₽/месяц </h2>
+                                    <a href="corporate_tariff.html"><button
+                                            class="tariff_button open-modal-btn">Подробнее</button></a>
+                                </div>
+                                <p class="tariff_slogan">«Мы заботимся о вас»</p>
+                            </div>
+                        </div>
+
+                        <div class="tariff_corporate tariff">
+                            <div class="content_tariff">
+                                <div class="chips_tariff">Корпоративные занятия</div>
+                                <h4 class="title_tariff">Расширенный тариф</h4>
+                                <p class="tariff_description">
+                                    Такой формат подойдет
+                                    для государственных секторов
+                                    и для коммерческих организаций
+                                </p>
+                                <ul class="tariff_benefits">
+                                    <li>Бесплатное пробное занятие</li>
+                                    <li>от 3 до 8 человек</li>
+                                    <li>2 занятия в неделю / 8 занятий в месяц</li>
+                                    <li>выезд мануального терапевта 2 раза в год
+                                        для коррекции тренировочной программы</li>
+                                    <li>с закупкой оборудования*</li>
+                                </ul>
+                            </div>
+                            <div class="tarif_pb_s">
+                                <div class="card">госсектор скидка 15%</div>
+                                <div class="tariff_pb">
+                                    <h2 class="price"> 24 000 ₽/месяц </h2>
+                                    <a href="corporate_tariff_extended.html"><button
+                                            class="tariff_button open-modal-btn">Подробнее</button></a>
+                                </div>
+                                <p class="tariff_slogan">«Мы заботимся о вас»</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tar_form_wrapper">
+                        <form action method="post" id="formId_2" autocomplete="on">
+                            <div class="tar_form_fields">
+                                <div class="input_field">
+                                    <input type="text" id="fio_4" name="fio" required placeholder="Ваше Имя*">
+                                </div>
+                                <div class="input_field">
+                                    <input type="email" id="email_4" name="email" required placeholder="Ваш email*" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="choice_and_button">
+                                <div class="choice">
+                                    <div class="choice_option">
+                                        Выбор тарифа
+                                    </div>
+
+                                    <div class="choice_tariff">
+                                        <div class="radio_input_container">
+                                            <input type="radio" class="radio_button" name="radio">
+                                            <div class="radio_tile">
+                                                <label for="" class="radio_tile_label">Базовый тариф</label>
+                                            </div>
+                                        </div>
+                                        <div class="radio_input_container">
+                                            <input type="radio" class="radio_button" name="radio">
+                                            <div class="radio_tile">
+                                                <label for="" class="radio_tile_label">Расширенный тариф</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <button type="submit" class="button_application btn">Оставить заявку</button>
+                            </div>
+                        </form>
+
+                        <div class="desk_star">
+                            *закупка оборудования предусматривает
+                            закупку ковриков для йоги, блоков, ремней,
+                            теннисных мячиков, спортивных роллов.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="second_service service" id="anchor_nail">
+
+                <div class="t_f">
+                    <div class="s_n">
+                        <div class="service_n">
+                            <h3>02.</h3>
+                            <h3>«Я хочу жить хорошо»</h3>
+                        </div>
+                        <div class="service_name">
+                            <h3>Гвоздестояние</h3>
+                        </div>
+                    </div>
+                    <div class="tar_tarifs">
+                        <div class="tariff_nail tariff tar_nail">
+                            <div class="content_tariff">
+                                <div class="chips_tariff">Гвоздестояние</div>
+                                <h4 class="title_tariff">Занятие в группе</h4>
+                                <p class="tariff_description">
+                                    Такой формат подойдет
+                                    для небольших групп
+                                </p>
+                                <ul class="tariff_benefits">
+                                    <li>от 8 до 10 человек</li>
+                                    <li>2 занятия в неделю / 8 занятий в месяц</li>
+                                </ul>
+                            </div>
+                            <div class="tarif_pb_s">
+                                <div class="tariff_pb">
+                                    <p class="price">8 000 ₽/месяц</p>
+                                    <a href="nail_tariff.html">
+                                        <button class="tariff_button">Подробнее</button>
+                                    </a>
+                                </div>
+                                <p class="tariff_slogan">«Я хочу жить хорошо»</p>
+                            </div>
+                        </div>
+
+                        <div class="tariff_nail tariff tar_nail">
+                            <div class="content_tariff">
+                                <div class="chips_tariff">Гвоздестояние</div>
+                                <h4 class="title_tariff">Персональное занятие</h4>
+                                <p class="tariff_description">
+                                    Такой формат подойдет
+                                    для тех кто хочет заниматься персонально
+                                    с тренером
+                                </p>
+                                <ul class="tariff_benefits">
+                                    <li>Персональное занятие</li>
+                                    <li>Личное сопровождение с тренером</li>
+                                </ul>
+                            </div>
+                            <div class="tarif_pb_s">
+                                <div class="tariff_pb">
+                                    <p class="price">3 000 ₽/занятие</p>
+                                    <a href="nail_tariff_personal.html">
+                                        <button class="tariff_button">Подробнее</button>
+                                    </a>
+                                </div>
+                                <p class="tariff_slogan">«Я хочу жить хорошо»</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tar_form_wrapper">
+                        <form action method="post" id="formId_2" class="form_nail" autocomplete="on">
+                            <div class="tar_form_fields">
+                                <div class="input_field">
+                                    <input type="text" id="fio_4" name="fio" required placeholder="Ваше Имя*">
+                                </div>
+                                <div class="input_field">
+                                    <input type="email" id="email_4" name="email" required placeholder="Ваш email*" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="choice_and_button">
+                                <div class="choice">
+                                    <div class="choice_option">
+                                        Выбор тарифа
+                                    </div>
+
+                                    <div class="choice_tariff">
+                                        <div class="radio_input_container">
+                                            <input type="radio" class="radio_button" name="radio">
+                                            <div class="radio_tile">
+                                                <label for="" class="radio_tile_label">Занятие в группе</label>
+                                            </div>
+                                        </div>
+                                        <div class="radio_input_container">
+                                            <input type="radio" class="radio_button" name="radio">
+                                            <div class="radio_tile">
+                                                <label for="" class="radio_tile_label">Персональное занятие</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="button_application btn">Оставить заявку</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="title tit_title tit_tile" id="anchor_dop_services">Дополнительные услуги</h1>
+
+            <section class="section__qanda">
+                <div class="wrapper1">
+                    <div class="qa__wrapper">
+                        <p class="qanda_title">Мануальный терапевт. Индивидуальное занятие</p>
+                        <svg style="transition: 0.3s" id="btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                                fill="#423C3A" />
+                        </svg>
+                        <span class="span" style="max-height: 0">
+                            <div class="content">
+                                <div class="prices_table_0">
+                                    <div class="column_1 column">
+                                        <div class="table_item">
+                                            <p class="title_column">Количество покупаемых занятий за раз</p>
+                                        </div>
+                                        <div class="table_item t_item t_i_cont">1</div>
+                                        <div class="table_item t_item t_i_cont">2 - 4</div>
+                                        <div class="table_item t_item t_i_cont">5 - 7</div>
+                                        <div class="table_item t_item t_i_cont">7 - 9</div>
+                                        <div class="table_item t_item t_i_cont">10 и выше</div>
+
+                                    </div>
+
+                                    <div class="column_2 column">
+                                        <div class="table_item">
+                                            <p class="title_column">Цена за одно занятие</p>
+                                        </div>
+                                        <div class="table_item t_item">9 000 ₽</div>
+                                        <div class="table_item t_item">7 200 ₽</div>
+                                        <div class="table_item t_item">6 300 ₽</div>
+                                        <div class="table_item t_item">5 400 ₽</div>
+                                        <div class="table_item t_item">4 050 ₽</div>
+                                    </div>
+
+                                </div>
+                                <div class="desk_star">Чем больше занятий вы купите за один раз, тем дешевле будет цена
+                                    за каждое из занятий.</div>
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="qa__wrapper">
+                        <p class="qanda_title">Массажист. Несколько видов массажа на выбор</p>
+                        <svg style="transition: 0.3s" id="btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                                fill="#423C3A" />
+                        </svg>
+                        <span class="span" style="max-height: 0">
+                            <div class="content">
+                                <div class="massage_tables">
+                                    <div class="column_1 column">
+                                        <div class="table_item">
+                                            <p class="title_column">Виды массажа</p>
+                                        </div>
+                                        <div class="table_item t_item t_i_cont" id="classic_massage">
+                                            Классический массаж спины
+                                            (3 зоны)
+                                        </div>
+                                        <div class="table_item t_item t_i_cont">
+                                            Массаж Шейно-воротниковой зоны
+                                        </div>
+                                        <div class="table_item t_item t_i_cont">
+                                            Общий массаж тела
+                                        </div>
+                                        <div class="table_item t_item t_i_cont">
+                                            Массаж Антристресс
+                                        </div>
+                                        <div class="table_item t_item t_i_cont">
+                                            Спортивный массаж
+                                        </div>
+                                        <div class="table_item t_item t_i_cont">
+                                            Антицеллюлитный массаж
+                                        </div>
+                                        <div class="table_item t_item t_i_cont">
+                                            Лимфодренажный массаж
+                                        </div>
+                                        <div class="table_item t_item t_i_cont">
+                                            Массаж лица
+                                        </div>
+
+                                    </div>
+
+                                    <div class="prices_table">
+
+                                        <div class="column_2 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Цена</p>
+                                            </div>
+                                            <div class="table_item t_item" id="price_classic_massage_45min">2 400 ₽
+                                            </div>
+                                            <div class="table_item t_item" id="price_neck_massage_20min">800 ₽</div>
+                                            <div class="table_item t_item" id="price_common_massage_90min">3 020 ₽</div>
+                                            <div class="table_item t_item" id="price_antistress_massage_90min">4 030 ₽
+                                            </div>
+                                            <div class="table_item t_item" id="price_sport_massage_60min">2 400 ₽</div>
+                                            <div class="table_item t_item" id="price_anticellulite_massage_60min">2 400
+                                                ₽</div>
+                                            <div class="table_item t_item" id="price_lymph_massage_60min">2 015 ₽</div>
+                                            <div class="table_item t_item" id="price_face_massage_60min">2 015 ₽</div>
+                                        </div>
+
+                                        <div class="column_3 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Длительность</p>
+                                            </div>
+                                            <div class="table_item t_item" id="45min">45 минут</div>
+                                            <div class="table_item t_item" id="20min">20 минут</div>
+                                            <div class="table_item t_item" id="90min">1,5 часа</div>
+                                            <div class="table_item t_item" id="90min">1,5 часа</div>
+                                            <div class="table_item t_item" id="60min">1 час</div>
+                                            <div class="table_item t_item" id="60min">1 час</div>
+                                            <div class="table_item t_item" id="60min">1 час</div>
+                                            <div class="table_item t_item" id="60min">1 час</div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="prices_table">
+
+                                        <div class="column_4 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Цена</p>
+                                            </div>
+                                            <div class="table_item t_item" id="price_classic_massage_60min">
+                                                3 020 ₽
+                                            </div>
+                                            <div class="table_item t_item" id="price_neck_massage_25min">
+                                                1000 ₽
+                                            </div>
+                                            <div class="table_item t_item" id="price_common_massage_120min">
+                                                4 030 ₽
+                                            </div>
+                                            <div class="table_item t_item" id="price_antistress_massage_120min">
+                                                5 050 ₽
+                                            </div>
+                                            <div class="table_item t_item" id="price_sport_massage_75min">
+                                                3 020 ₽
+                                            </div>
+                                            <div class="table_item t_item" id="price_anticellulite_massage_90min">
+                                                3 020 ₽
+                                            </div>
+                                            <div class="table_item t_item" id="price_lymph_massage_75min">
+                                                2 420 ₽
+                                            </div>
+                                            <div class="table_item t_item" id="price_face_massage_75min">
+                                                2 420 ₽
+                                            </div>
+                                        </div>
+
+                                        <div class="column_5 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Длительность</p>
+                                            </div>
+                                            <div class="table_item t_item">1 час</div>
+                                            <div class="table_item t_item">25 минут</div>
+                                            <div class="table_item t_item">2 часа</div>
+                                            <div class="table_item t_item">2 часа</div>
+                                            <div class="table_item t_item">1 час 15 минут</div>
+                                            <div class="table_item t_item">1,5 часа</div>
+                                            <div class="table_item t_item">1 час 15 минут</div>
+                                            <div class="table_item t_item">1 час 15 минут</div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="desk_star"> Стоимость массажа варьируется от продолжительности сеанса
+                                    массажа. </div>
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="qa__wrapper_nt">
+                        <p class="qanda_title">Инструктор ЛФК</p>
+                        <p class="qanda_title_price">4 200 ₽/занятие</p>
+                    </div>
+
+                    <div class="qa__wrapper_nt">
+                        <p class="qanda_title">Тренер Йога, Пилатес. Персональное занятие</p>
+                        <p class="qanda_title_price">3 990 ₽/занятие</p>
+                    </div>
+                </div>
+
+                <div class="wrapper_mobile">
+                    <div class="wr_mobile_1">
+                        <div class="table_mobile">
+                            Мануальный терапевт. Индивидуальное занятие
+                            <svg class="svg_chevron" style="transition: 0.3s" id="btn" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                                    fill="#423C3A" />
+                            </svg>
+                        </div>
+                        <div class="table_content p_hidden">
+                            <div class="content">
+                                <div class="prices_table">
+                                    <div class="column_1 column">
+                                        <div class="table_item">
+                                            <p class="title_column">Количество покупаемых занятий за раз</p>
+                                        </div>
+                                        <div class="table_item t_item t_i_cont">1</div>
+                                        <div class="table_item t_item t_i_cont">2 - 4</div>
+                                        <div class="table_item t_item t_i_cont">5 - 7</div>
+                                        <div class="table_item t_item t_i_cont">7 - 9</div>
+                                        <div class="table_item t_item t_i_cont">10 и выше</div>
+
+                                    </div>
+
+                                    <div class="column_2 column">
+                                        <div class="table_item">
+                                            <p class="title_column">Цена за одно занятие</p>
+                                        </div>
+                                        <div class="table_item t_item">9 000 ₽</div>
+                                        <div class="table_item t_item">7 200 ₽</div>
+                                        <div class="table_item t_item">6 300 ₽</div>
+                                        <div class="table_item t_item">5 400 ₽</div>
+                                        <div class="table_item t_item">4 050 ₽</div>
+                                    </div>
+
+                                </div>
+                                <div class="important_desk">Чем больше занятий вы купите за один раз, тем дешевле будет
+                                    цена за каждое из занятий.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wr_mobile_2">
+                        <div class="table_mobile">
+                            Массажист. Несколько видов массажа на выбор
+                            <svg class="svg_chevron" style="transition: 0.3s" id="btn" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                                    fill="#423C3A" />
+                            </svg>
+                        </div>
+                        <div class="table_content p_hidden">
+
+                            <div class="content_block">
+                                <div class="massage content_header">Классический массаж спины (3 зоны)<svg
+                                        class="svg_chevron" style="transition: 0.3s" id="btn" width="24" height="24"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                                            fill="#ffffff" />
+                                    </svg></div>
+                                <div class="table_sub_content p_hidden">
+                                    <div class="sub_content">
+                                        <div class="column_2 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Цена</p>
+                                            </div>
+                                            <div class="table_item t_item" id="price_classic_massage_45min">2 400 ₽
+                                            </div>
+                                            <div class="table_item t_item" id="price_neck_massage_20min">3 020 ₽</div>
+                                        </div>
+
+
+                                        <div class="column_3 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Длительность</p>
+                                            </div>
+                                            <div class="table_item t_item" id="45min">45 минут</div>
+                                            <div class="table_item t_item" id="20min">1 час</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content_block">
+                                <div class="content_header">Массаж Шейно-воротниковой зоны<svg class="svg_chevron"
+                                        style="transition: 0.3s" id="btn" width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                                            fill="#ffffff" />
+                                    </svg></div>
+                                <div class="table_sub_content p_hidden">
+                                    <div class="sub_content">
+                                        <div class="column_2 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Цена</p>
+                                            </div>
+                                            <div class="table_item t_item" id="price_classic_massage_45min">
+                                                800 ₽
+                                            </div>
+                                            <div class="table_item t_item" id="price_neck_massage_20min">
+                                                1 000 ₽
+                                            </div>
+                                        </div>
+
+
+                                        <div class="column_3 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Длительность</p>
+                                            </div>
+                                            <div class="table_item t_item" id="45min">20 минут</div>
+                                            <div class="table_item t_item" id="20min">25 минут</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content_block">
+                                <div class="content_header">Общий массаж тела<svg class="svg_chevron"
+                                        style="transition: 0.3s" id="btn" width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                                            fill="#ffffff" />
+                                    </svg></div>
+                                <div class="table_sub_content p_hidden">
+                                    <div class="sub_content">
+                                        <div class="column_2 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Цена</p>
+                                            </div>
+                                            <div class="table_item t_item">
+                                                3 020 ₽
+                                            </div>
+                                            <div class="table_item t_item">
+                                                4 030 ₽
+                                            </div>
+                                        </div>
+
+
+                                        <div class="column_3 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Длительность</p>
+                                            </div>
+                                            <div class="table_item t_item">
+                                                1,5 часа
+                                            </div>
+                                            <div class="table_item t_item">
+                                                2 часа </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content_block">
+                                <div class="content_header">Массаж Антристресс<svg class="svg_chevron"
+                                        style="transition: 0.3s" id="btn" width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                                            fill="#ffffff" />
+                                    </svg></div>
+                                <div class="table_sub_content p_hidden">
+                                    <div class="sub_content">
+                                        <div class="column_2 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Цена</p>
+                                            </div>
+                                            <div class="table_item t_item">
+                                                4 030 ₽
+                                            </div>
+                                            <div class="table_item t_item">
+                                                5 050 ₽
+                                            </div>
+                                        </div>
+
+
+                                        <div class="column_3 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Длительность</p>
+                                            </div>
+                                            <div class="table_item t_item">
+                                                1,5 часа
+                                            </div>
+                                            <div class="table_item t_item">
+                                                2 часа
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content_block">
+                                <div class="content_header">Спортивный массаж<svg class="svg_chevron"
+                                        style="transition: 0.3s" id="btn" width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                                            fill="#ffffff" />
+                                    </svg></div>
+                                <div class="table_sub_content p_hidden">
+                                    <div class="sub_content">
+                                        <div class="column_2 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Цена</p>
+                                            </div>
+                                            <div class="table_item t_item">
+                                                2 400 ₽
+                                            </div>
+                                            <div class="table_item t_item">
+                                                3 020 ₽
+                                            </div>
+                                        </div>
+
+
+                                        <div class="column_3 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Длительность</p>
+                                            </div>
+                                            <div class="table_item t_item">
+                                                1 час
+                                            </div>
+                                            <div class="table_item t_item">
+                                                1 час 15 минут
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content_block">
+                                <div class="content_header">Антицеллюлитный массаж<svg class="svg_chevron"
+                                        style="transition: 0.3s" id="btn" width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                                            fill="#ffffff" />
+                                    </svg></div>
+                                <div class="table_sub_content p_hidden">
+                                    <div class="sub_content">
+                                        <div class="column_2 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Цена</p>
+                                            </div>
+                                            <div class="table_item t_item">
+                                                2 400 ₽
+                                            </div>
+                                            <div class="table_item t_item">
+                                                3 020 ₽
+                                            </div>
+                                        </div>
+
+
+                                        <div class="column_3 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Длительность</p>
+                                            </div>
+                                            <div class="table_item t_item">
+                                                1 час
+                                            </div>
+                                            <div class="table_item t_item">
+                                                1,5 часа
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content_block">
+                                <div class="content_header">Лимфодренажный массаж<svg class="svg_chevron"
+                                        style="transition: 0.3s" id="btn" width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                                            fill="#ffffff" />
+                                    </svg></div>
+                                <div class="table_sub_content p_hidden">
+                                    <div class="sub_content">
+                                        <div class="column_2 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Цена</p>
+                                            </div>
+                                            <div class="table_item t_item">
+                                                2 015 ₽ ₽
+                                            </div>
+                                            <div class="table_item t_item">
+                                                2 420 ₽ ₽
+                                            </div>
+                                        </div>
+
+
+                                        <div class="column_3 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Длительность</p>
+                                            </div>
+                                            <div class="table_item t_item">
+                                                1 час
+                                            </div>
+                                            <div class="table_item t_item">
+                                                1 час 15 минут
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content_block">
+                                <div class="content_header">Массаж лица<svg class="svg_chevron" style="transition: 0.3s"
+                                        id="btn" width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                                            fill="#ffffff" />
+                                    </svg></div>
+                                <div class="table_sub_content p_hidden">
+                                    <div class="sub_content">
+                                        <div class="column_2 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Цена</p>
+                                            </div>
+                                            <div class="table_item t_item">
+                                                2 015 ₽
+                                            </div>
+                                            <div class="table_item t_item">
+                                                2 420 ₽
+                                            </div>
+                                        </div>
+
+
+                                        <div class="column_3 column">
+                                            <div class="table_item">
+                                                <p class="title_column">Длительность</p>
+                                            </div>
+                                            <div class="table_item t_item">
+                                                1 час
+                                            </div>
+                                            <div class="table_item t_item">
+                                                1 час 15 минут
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="important_desk">Стоимость массажа варьируется от продолжительности сеанса
+                                массажа.</div>
+                        </div>
+                    </div>
+
+                    <div class="qa__wrapper_mobile">
+                        <p class="qanda_title_mobile">Инструктор ЛФК</p>
+                        <p class="qanda_title_price_mobile">4 200 ₽/занятие</p>
+                    </div>
+
+                    <div class="qa__wrapper_mobile">
+                        <p class="qanda_title_mobile">Тренер Йога, Пилатес. Персональное занятие</p>
+                        <p class="qanda_title_price_mobile">3 990 ₽/занятие</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <h1 class="title tit_title tit_tile">Бонусная программа</h1>
+
+            <div class="bonus_program">
+                <div class="bonus_cards">
+                    <div class="b_column level_0">
+                        <div class="b_t_c b_t_c_color">Начислим бонусами</div>
+                        <div class="b_t_c_small btcsmall_color">С друга</div>
+                        <div class="b_t_c_small btcsmall_color">За покупку товара</div>
+                        <div class="b_t_c_small btcsmall_color">За приобретение услуги</div>
+                    </div>
+                    <div class="b_column level_1">
+                        <div class="b_t_c">
+                            <div class="chips_level">1 уровень</div>
+                            <div class="wasted_money">до 49 999 ₽</div>
+                            <div class="level_desk">Общая сумма покупок</div>
+                        </div>
+                        <div class="b_t_c_small">1,50 %</div>
+                        <div class="b_t_c_small">1,50 %</div>
+                        <div class="b_t_c_small">3,50 %</div>
+                    </div>
+                    <div class="b_column level_2">
+                        <div class="b_t_c">
+                            <div class="chips_level">2 уровень</div>
+                            <div class="wasted_money">от 50 000 ₽</div>
+                            <div class="level_desk">Общая сумма покупок</div>
+                        </div>
+                        <div class="b_t_c_small">1,50 %</div>
+                        <div class="b_t_c_small">1,50 %</div>
+                        <div class="b_t_c_small">3,50 %</div>
+                    </div>
+                    <div class="b_column level_3">
+                        <div class="b_t_c">
+                            <div class="chips_level">3 уровень</div>
+                            <div class="wasted_money">от 120 000 ₽</div>
+                            <div class="level_desk">Общая сумма покупок</div>
+                        </div>
+                        <div class="b_t_c_small">2,00 %</div>
+                        <div class="b_t_c_small">2,00 %</div>
+                        <div class="b_t_c_small">4,00 %</div>
+                    </div>
+
+                    <div class="b_column level_4">
+                        <div class="b_t_c">
+                            <div class="chips_level">4 уровень</div>
+                            <div class="wasted_money">от 260 000 ₽</div>
+                            <div class="level_desk">Общая сумма покупок</div>
+                        </div>
+                        <div class="b_t_c_small">2,50 %</div>
+                        <div class="b_t_c_small">2,50 %</div>
+                        <div class="b_t_c_small">5,00 %</div>
+                    </div>
+
+                    <div class="b_column level_5">
+                        <div class="b_t_c">
+                            <div class="chips_level">5 уровень</div>
+                            <div class="wasted_money">от 500 000 ₽</div>
+                            <div class="level_desk">Общая сумма покупок</div>
+                        </div>
+                        <div class="b_t_c_small">3,00 %</div>
+                        <div class="b_t_c_small">4,00 %</div>
+                        <div class="b_t_c_small">6,00 %</div>
+                    </div>
+
+                    <div class="b_column level_6">
+                        <div class="b_t_c">
+                            <div class="chips_level">6 уровень</div>
+                            <div class="wasted_money">от 1 млн ₽</div>
+                            <div class="level_desk">Общая сумма покупок</div>
+                        </div>
+                        <div class="b_t_c_small">4,00 %</div>
+                        <div class="b_t_c_small">6,00 %</div>
+                        <div class="b_t_c_small">7,00 %</div>
+                    </div>
+
+                    <div class="b_column level_7">
+                        <div class="b_t_c">
+                            <div class="chips_level">7 уровень</div>
+                            <div class="wasted_money">от 1,5 млн ₽</div>
+                            <div class="level_desk">Общая сумма покупок</div>
+                        </div>
+                        <div class="b_t_c_small">9,00 %</div>
+                        <div class="b_t_c_small">9,00 %</div>
+                        <div class="b_t_c_small">9,00 %</div>
+                    </div>
+
+                </div>
+
+                <div class="desk_star">
+                    Бонусная программа для дистрибьютера.
+                    Дистрибьютером может быть тренер, любой специалист.
+                </div>
+
+                <div class="bonus_cards_2">
+                    <div class="b_column level_0">
+                        <div class="b_t_c_small btcsmall_color">С друга</div>
+                        <div class="b_t_c_small btcsmall_color">За покупку товара</div>
+                        <div class="b_t_c_small btcsmall_color">За приобретение услуги</div>
+                    </div>
+                    <div class="b_column level_1">
+                        <div class="b_t_c_small">1,50 %</div>
+                        <div class="b_t_c_small">1,50 %</div>
+                        <div class="b_t_c_small">3,50 %</div>
+                    </div>
+                </div>
+
+                <div class="wrapper1">
+                    <div class="qa__wrapper">
+                        <p class="qanda_title">Правила бонусной программы</p>
+                        <svg style="transition: 0.3s" id="btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                                fill="#423C3A" />
+                        </svg>
+                        <span class="span" style="max-height: 0">
+                            <div class="content">
+                                <p>Бонусные баллы списываются из расчёта 1 балл за 1 рубль.
+                                </p>
+                                <p>Пользователь вправе оплатить бонусными баллами 30 или 50 % стоимости товара или
+                                    услуги.
+                                    Бонусная программа не распространятся на услуги по доставке товаров пользователю.
+                                </p>
+                                <p>Бонусные баллы, накопленные пользователем и не потраченные им в созданном онлайн
+                                    заказе
+                                    или покупке в розничных магазинах, остаются на его бонусном счёте. Проверить
+                                    количество
+                                    бонусных баллов можно на специальной онлайн карте, которая ранее была выдана
+                                    пользователю.
+                                    Так же количество бонусных баллов можно уточнить у менеджера по телефону.</p>
+                                <p>Начисление бонусных баллов происходит в течении 24 часов с момента покупки.
+                                </p>
+                                <p>Бонусные баллы не начисляются за покупку подарочных сертификатов и оплату услуг
+                                    доставки.
+                                </p>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="wrapper_mobile">
+                    <div class="table_mobile">
+                        Правила бонусной программы
+                        <svg class="svg_chevron" style="transition: 0.3s" id="btn" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                                fill="#423C3A" />
+                        </svg>
+                    </div>
+                    <div class="table_content p_hidden">
+                        <p>Бонусные баллы списываются из расчёта 1 балл за 1 рубль.
+                        </p>
+                        <p>Пользователь вправе оплатить бонусными баллами 30 или 50 % стоимости товара или услуги.
+                            Бонусная программа не распространятся на услуги по доставке товаров пользователю.</p>
+                        <p>Бонусные баллы, накопленные пользователем и не потраченные им в созданном онлайн заказе
+                            или покупке в розничных магазинах, остаются на его бонусном счёте. Проверить количество
+                            бонусных баллов можно на специальной онлайн карте, которая ранее была выдана пользователю.
+                            Так же количество бонусных баллов можно уточнить у менеджера по телефону.</p>
+                        <p>Начисление бонусных баллов происходит в течении 24 часов с момента покупки.
+                        </p>
+                        <p>Бонусные баллы не начисляются за покупку подарочных сертификатов и оплату услуг доставки.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="block_for_partnership">
+                <div class="title_desk_partnership">
+                    <h1 class="title">Мы открыты к любому сотрудничеству</h1>
+                    <p class="description_email title_leave_a">yogakoka@mail.ru</p>
+                </div>
+                <div class="wrapper wrapper_partnership">
+                    <form action method="post" id="formId" autocomplete="on">
+                        <div class="input_field">
+                            <input type="text" id="fio_3" name="fio_partnership" required placeholder="Ваше Имя*">
+                        </div>
+                        <div class="input_field">
+                            <input type="email" id="email_3" name="email_partnership" required placeholder="Ваш email*" autocomplete="off">
+                        </div>
+                        <div class="input_field input_review">
+                            <textarea name="text_partnership" id="" cols="30" rows="10" required
+                                placeholder="Опишите ваше предложение"></textarea>
+                        </div>
+                        <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="color-3" name="color-3" value="red"
+                                required="required">
+                            <label for="color-3">Я согласен с политикой конфиденциальности</label>
+                        </div>
+                        <button type="submit" class="btn">Оставить предложение</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer_content">
+                <div class="footer_row">
+                    <div class="footer_contacts">
+                        <h4 class="footer_title">Контакты</h4>
+                        <ul class="footer_contacts_list footer_list">
+                            <li>
+                                <img src="images/icons/tg_icon.svg" alt="tg" class="img_footer_normal">
+                                <img src="images/icons/tg_icon_small.svg" alt="tg" class="img_footer_small">
+                                <a href="https://t.me/yoga_koka">@yoga_koka</a>
+                            </li>
+                            <li>
+                                <img src="images/icons/vc_icon.svg" alt="vc" class="img_footer_normal">
+                                <img src="images/icons/vc_icon_small.svg" alt="tg" class="img_footer_small">
+                                <a href="https://vk.com/yogakoka">Группа вконтакте</a>
+                            </li>
+                            <li>
+                                <img src="images/icons/email_icon.svg" alt="mail" class="img_footer_normal">
+                                <img src="images/icons/email_icon_small.svg" alt="tg" class="img_footer_small">
+                                <a href="">yogakoka@gmail.com</a>
+                            </li>
+                            <li>
+                                <img src="images/icons/phone_icon.svg" alt="phone" class="img_footer_normal">
+                                <img src="images/icons/phone_icon_small.svg" alt="tg" class="img_footer_small">
+                                <a href="">8 800 555 35 35</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_menu">
+                        <h4 class="footer_title">Меню</h4>
+                        <ul class="footer_list_menu footer_list">
+                            <li><a href="main_page.html" class="footer_item">Главная</a></li>
+                            <li><a href="tariffs.html" class="footer_item">Тарифы</a></li>
+                            <li><a href="about_us.html" class="footer_item">О нас</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_tariff">
+                        <h4 class="footer_title">Тарифы</h4>
+                        <ul class="footer_tariff_list footer_list">
+                            <li><a href="tariffs.html#anchor_corporate">Корпоративные занятия</a></li>
+                            <li><a href="tariffs.html#anchor_nail">Гвоздестояние</a></li>
+                            <li><a href="tariffs.html#anchor_dop_services">Дополнительные услуги</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_any_questions">
+                        <h4 class="footer_title">Остались вопросы?</h4>
+                        <p class="footer_p">
+                            Напишите нам, мы ответим
+                            на интересующие вопросы
+                        </p>
+                        <button class="footer_button">Задать вопрос</button>
+                    </div>
+                </div>
+
+                <div class="break_line"></div>
+
+
+                <ul class="footer_atoms footer_list">
+                    <li><img src="images/logo.svg" class="footer_logo" alt="logo_company" type="image/svg+xml"></li>
+                    <li>2023 © Все права защищены</li>
+                    <li>Договор оферты</li>
+                    <li>Служба поддержки</li>
+                    <li>Разработка сайта</li>
+                    <li>Дизайн сайта</li>
+                </ul>
+
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/hor_scroll.js" type="text/javascript"></script>
+</body>
+
+</html>
