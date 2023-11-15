@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/tariff.css">
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="hero">
+        <header>
+            <div class="nav_bar header__body">
+                <a href="main_page.html" class="header__logo">
+                    <img src="images/logo.svg" alt="logo_company" type="image/svg+xml">
+                </a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li><a href="main_page.html" class="header__link">Главная</a></li>
+                        <li><a href="tariffs.html" class="header__link">Тарифы</a></li>
+                        <li><a href="about_us.html" class="header__link">О нас</a></li>
+                        <li><button class="header_button">Позвонить</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="hero_content">
+            <div class="hero_cd">
+                <div class="hero_t">
+                    <h2 class="main_title">YOGAKOKA</h2>
+                    <h2 class="main_title">Корпоративная йога</h2>
+                </div>
+                <p class="main_text">Инновационное решение для вашего бизнеса</p>
+            </div>
+            <button class="main_button" id="open-modal-btn">Оставить заявку</button>
+        </div>
+    </div>
+
+    <div class="modal" id="my-modal">
+        <div class="modal__box">
+            <button class="modal__close-btn" id="close-my-modal-btn">
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                        fill="#333333" />
+                    <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+                </svg>
+            </button>
+            <h2 class="for_margin_btm">Выберите тариф и оставьте заявку</h2>
+
+            <form action method="post" id="formId_2" autocomplete="on">
+                <div class="tar_form_fields">
+                    <div class="input_field">
+                        <input type="text" id="fio_4" name="fio" required placeholder="Ваше Имя*">
+                    </div>
+                    <div class="input_field">
+                        <input type="email" id="email_4" name="email" required placeholder="Ваш email*"
+                            autocomplete="off">
+                    </div>
+                </div>
+                <div class="">
+                    <div class="choice mo_choice">
+                        <div class="choice_option for_margin_btm">
+                            Выбор тарифа
+                        </div>
+
+                        <div class="choice_tariff for_margin_btm">
+                            <div class="radio_input_container" id="chosen_corporate">
+                                <input type="radio" class="radio_button" name="radio">
+                                <div class="radio_tile">
+                                    <label for="" class="radio_tile_label">Корпоративный тариф</label>
+                                </div>
+                            </div>
+
+                            <div class="radio_input_container" id="chosen_nail">
+                                <input type="radio" class="radio_button" name="radio">
+                                <div class="radio_tile">
+                                    <label for="" class="radio_tile_label">Гвоздестояние</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="f_corporate_tariff">
+                            <div class="choice p_hidden" id="chosen_corporate_packets">
+                                <div class="choice_option">
+                                    Выбор пакета
+                                </div>
+
+                                <div class="choice_tariff ">
+                                    <div class="radio_input_container" id="chosen_corp_base">
+                                        <input type="radio" class="radio_button" name="radio">
+                                        <div class="radio_tile">
+                                            <label for="" class="radio_tile_label">Базовый тариф</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="radio_input_container" id="chosen_corp_extend">
+                                        <input type="radio" class="radio_button" name="radio">
+                                        <div class="radio_tile">
+                                            <label for="" class="radio_tile_label">
+                                                Расширенный тариф
+                                            </label>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="f_nail_tariff">
+                            <div class="choice p_hidden" id="chosen_nail_packets">
+                                <div class="choice_option">
+                                    Выбор пакета
+                                </div>
+
+                                <div class="choice_tariff ">
+                                    <div class="radio_input_container" id="chosen_group_tr">
+                                        <input type="radio" class="radio_button" name="radio">
+                                        <div class="radio_tile">
+                                            <label for="" class="radio_tile_label">Занятие в группе</label>
+                                        </div>
+                                    </div>
+                                    <div class="radio_input_container" id="chosen_personal_tr">
+                                        <input type="radio" class="radio_button" name="radio">
+                                        <div class="radio_tile">
+                                            <label for="" class="radio_tile_label">Персональное
+                                                занятие</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="base_price">
+                        <div class="form_price p_hidden" id="corporate_base">
+                            <div class="card card_margin_top">госсектор скидка 25%</div>
+                            <div class="f_price">
+                                <h2 class="price mod_c">Стоимость:</h2>
+                                <h2 class="price mod_price"> 18 000 ₽/месяц </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="extend_price">
+                        <div class="form_price p_hidden" id="corporate_extend">
+                            <div class="card card_margin_top">госсектор скидка 15%</div>
+                            <div class="f_price">
+                                <h2 class="price mod_c">Стоимость:</h2>
+                                <h2 class="price mod_price"> 24 000 ₽/месяц </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group_price">
+                        <div class="form_price p_hidden" id="nail_group">
+                            <div class="f_price card_margin_top">
+                                <h2 class="price mod_c">Стоимость:</h2>
+                                <h2 class="price mod_price"> 8 000 ₽/месяц </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="personal_price">
+                        <div class="form_price p_hidden" id="nail_personal">
+                            <div class="f_price card_margin_top">
+                                <h2 class="price mod_c">Стоимость:</h2>
+                                <h2 class="price mod_price"> 3 000 ₽/занятие </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="button_application btn">Оставить заявку</button>
+            </form>
+
+        </div>
+    </div>
+
+    <section class="about_us">
+        <div class="title_description_about_us">
+            <h1 class="title title_about_us">О нас</h1>
+            <p class="description">Мы - команда профессиональных и опытных йога-практиков,
+                которые предлагают нашим ученикам уникальную возможность
+                раскрыть свой потенциал и обрести гармонию тела и разума.</p>
+        </div>
+        <img src="images/about_us.png" alt="" class="img_small img_about_us">
+
+        <h1 class="title title_ourt">Наша команда</h1>
+        <div class="member member_1">
+            <img src="images/elena.jpg" alt="" class="img_small">
+            <h2 class="title_ot">Кокорина Елена</h2>
+            <div class="chips_together">
+                <div class="chips">Руководитель проекта</div>
+                <div class="chips">Опыт в фитнесе более 15 лет</div>
+            </div>
+            <p class="description d_ot d_ot_0">
+                Обладатель диплома международного образца по направлению YOGA,
+                диплома по нутрициологии и диетологии. Имеет опыт более 15 лет
+                в фитнесе и является автором собственных программ по развитию
+                гибкости и подвижности позвоночника.
+            </p>
+        </div>
+        <div class="member member_2">
+            <img src="images/vladimir.jpg" alt="" class="img_small">
+            <h2 class="title_ot">Владимир</h2>
+            <div class="chips_together">
+                <div class="chips">Массажист, реабилитолог</div>
+                <div class="chips">Опыт в массаже более 10 лет</div>
+            </div>
+            <p class="description d_ot">
+                Мануальный терапевт, врач реабилитолог, кинезиотерапевт с
+                медицинским образованием.
+            </p>
+        </div>
+    </section>
+
+    <!-- Блок "Какие проблемы мы решаем?" -->
+
+    <div class="block_problems block">
+        <h1 class="title title_pb">Какие проблемы мы решаем?</h1>
+        <div class="problems">
+            <div class="problem pb_1">
+                <div class="pr_event problem_mouse_event">
+                    <div class="chips_number_small">01</div>
+                    <h3 class="title_problem">
+                        Синдром канала запястья (туннельный синдром)
+                    </h3>
+                </div>
+                <h3 class="problem_desk p_hidden change_problem">
+                    Туннельный синдром запястья (синдром запястного канала) — это неврологическое заболевание,
+                    при котором ткани в карпальном канале запястья отекают и сдавливают срединный нерв.
+                </h3>
+            </div>
+            <div class="problem pb_2">
+                <div class="pr_event problem_mouse_event">
+                    <div class="chips_number_small">02</div>
+                    <h3 class="title_problem">
+                        Остеохондроз, различные артриты и артрозы
+                    </h3>
+                </div>
+                <h3 class="problem_desk p_hidden change_problem">
+                    Остеохондроз — заболевание позвоночника, для которого характерны поражения межпозвоночных дисков, а
+                    также тканей самих позвонков.
+                    Артриты, Артрозы - это воспалительные заболевания суставов.
+                </h3>
+            </div>
+            <div class="problem pb_3">
+                <div class="pr_event problem_mouse_event">
+                    <div class="chips_number_small">03</div>
+                    <h3 class="title_problem">
+                        Заболевания сердечно-сосудистой системы
+                    </h3>
+                </div>
+                <h3 class="problem_desk p_hidden change_problem">
+                    Группа сердечно-сосудистых заболеваний представляет наибольшую угрозу для жизни и здоровья.
+                    Они происходят, главным образом, в результате закупоривания сосудов, которое препятствует
+                    току крови к сердцу или мозгу
+                </h3>
+            </div>
+            <div class="problem pb_4">
+                <div class="pr_event problem_mouse_event">
+                    <div class="chips_number_small">04</div>
+                    <h3 class="title_problem">
+                        Искривления осанки, кифозы, лордозы, сколиозы
+                    </h3>
+                </div>
+                <h3 class="problem_desk p_hidden change_problem">
+                    Нарушение осанки – это деформация позвоночника,
+                    который может быть изогнут во фронтальной (спереди назад) или сагиттальной (вбок) плоскостях.
+                </h3>
+            </div>
+            <div class="problem pb_5">
+                <div class="pr_event problem_mouse_event">
+                    <div class="chips_number_small">05</div>
+                    <h3 class="title_problem">
+                        Уменьшаем нервные расстройства
+                    </h3>
+                </div>
+                <h3 class="problem_desk p_hidden change_problem">
+                    К самым распространенным негативным последствиям нервного срыва относятся
+                    различные психосоматические нарушения, боль в желудке, скачки артериального давления,
+                    головокружение, головную боль, тошноту, рвоту, инфаркт, инсульт.
+                </h3>
+            </div>
+            <div class="problem pb_6">
+                <div class="pr_event problem_mouse_event">
+                    <div class="chips_number_small">06</div>
+                    <h3 class="title_problem">
+                        Уменьшаем агрессию, грубости внутри коллектива
+                    </h3>
+                </div>
+                <h3 class="problem_desk p_hidden change_problem">
+                    В зависимости от причины агрессия может сопровождаться злостью, нервозностью,
+                    раздражительностью, ощущением утраты, чувством горя, тоски и уныния, депрессией.
+                    Может привести к ухудшению отношений в коллективе.
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок "Какие результаты можем дать?" -->
+
+    <div class="block_results block">
+        <h1 class="title title_r">Какие результаты можем дать?</h1>
+        <div class="results">
+            <div class="result">
+                <div class="chips_number_small">01</div>
+                <h3 class="title_result">
+                    Улучшение гибкости и мобильности тела
+                </h3>
+            </div>
+            <div class="result">
+                <div class="chips_number_small">02</div>
+                <h3 class="title_result">
+                    Повышение чувства уверенности в своем теле
+                </h3>
+            </div>
+            <div class="result">
+                <div class="chips_number_small">03</div>
+                <h3 class="title_result">
+                    Улучшение спортивных результатов
+                </h3>
+            </div>
+            <div class="result">
+                <div class="chips_number_small">04</div>
+                <h3 class="title_result">
+                    Повышение эффективности работы компании
+                </h3>
+            </div>
+            <div class="result">
+                <div class="chips_number_small">05</div>
+                <h3 class="title_result">
+                    Развитие упорства и дисциплины коллектива
+                </h3>
+            </div>
+            <div class="result">
+                <div class="chips_number_small">06</div>
+                <h3 class="title_result">
+                    Улучшение концентрации и внимания у сотрудников
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок "Тарифы" -->
+
+    <div class="block_tariffs block">
+        <h1 class="title title_tar">Тарифы</h1>
+
+        <!-- Корпоративные занятия -->
+        <div class="tariffs">
+            <div class="tariff_corporate tariff">
+                <div class="content_tariff">
+                    <div class="chips_tariff">Корпоративные занятия</div>
+                    <h4 class="title_tariff">Базовый тариф</h4>
+                    <p class="tariff_description">
+                        Такой формат подойдет
+                        для государственных секторов
+                        и для коммерческих организаций
+                    </p>
+                    <ul class="tariff_benefits">
+                        <li>Бесплатное пробное занятие</li>
+                        <li>от 3 до 8 человек</li>
+                        <li>2 занятия в неделю / 8 занятий в месяц</li>
+                        <li>выезд мануального терапевта 1 раз в год
+                            для коррекции тренировочной программы</li>
+                        <li>без закупки оборудования</li>
+                    </ul>
+                </div>
+                <div class="tarif_pb_s">
+                    <div class="card">госсектор скидка 25%</div>
+                    <div class="tariff_pb">
+                        <h2 class="price"> 18 000 ₽/месяц </h1>
+                            <a href="corporate_tariff.html">
+                                <button class="tariff_button">Подробнее</button>
+                            </a>
+                    </div>
+                    <p class="tariff_slogan">«Мы заботимся о вас»</p>
+                </div>
+            </div>
+
+            <div class="tariff_corporate tariff">
+                <div class="content_tariff">
+                    <div class="chips_tariff">Корпоративные занятия</div>
+                    <h4 class="title_tariff">Расширенный тариф</h4>
+                    <p class="tariff_description">
+                        Такой формат подойдет
+                        для государственных секторов
+                        и для коммерческих организаций
+                    </p>
+                    <ul class="tariff_benefits">
+                        <li>Бесплатное пробное занятие</li>
+                        <li>от 3 до 8 человек</li>
+                        <li>2 занятия в неделю / 8 занятий в месяц</li>
+                        <li>выезд мануального терапевта 2 раза в год
+                            для коррекции тренировочной программы</li>
+                        <li>с закупкой оборудования*</li>
+                    </ul>
+                </div>
+                <div class="tarif_pb_s">
+                    <div class="card">госсектор скидка 15%</div>
+                    <div class="tariff_pb">
+                        <h2 class="price"> 24 000 ₽/месяц </h1>
+                            <a href="corporate_tariff_extended.html">
+                                <button class="tariff_button">Подробнее</button>
+                            </a>
+                    </div>
+                    <p class="tariff_slogan">«Мы заботимся о вас»</p>
+                </div>
+            </div>
+
+            <!-- Гвоздестояние -->
+
+            <div class="tariff_nail tariff">
+                <div class="content_tariff">
+                    <div class="chips_tariff">Гвоздестояние</div>
+                    <h4 class="title_tariff">Занятие в группе</h4>
+                    <p class="tariff_description">
+                        Такой формат подойдет
+                        для небольших групп
+                    </p>
+                    <ul class="tariff_benefits">
+                        <li>от 8 до 10 человек</li>
+                        <li>2 занятия в неделю / 8 занятий в месяц</li>
+                    </ul>
+                </div>
+                <div class="tarif_pb_s">
+                    <div class="tariff_pb">
+                        <p class="price">8 000 ₽/месяц</p>
+                        <a href="nail_tariff.html">
+                            <button class="tariff_button">Подробнее</button></a>
+                    </div>
+                    <p class="tariff_slogan">«Я хочу жить хорошо»</p>
+                </div>
+            </div>
+
+            <div class="tariff_nail tariff">
+                <div class="content_tariff">
+                    <div class="chips_tariff">Гвоздестояние</div>
+                    <h4 class="title_tariff">Персональное занятие</h4>
+                    <p class="tariff_description">
+                        Такой формат подойдет
+                        для тех кто хочет заниматься персонально
+                        с тренером
+                    </p>
+                    <ul class="tariff_benefits">
+                        <li>Персональное занятие</li>
+                        <li>Личное сопровождение с тренером</li>
+                    </ul>
+                </div>
+                <div class="tarif_pb_s">
+                    <div class="tariff_pb">
+                        <p class="price">3 000 ₽/занятие</p>
+                        <a href="nail_tariff_personal.html">
+                            <button class="tariff_button">Подробнее</button></a>
+                    </div>
+                    <p class="tariff_slogan">«Я хочу жить хорошо»</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Блок "Наши правила" -->
+
+    <div class="block_our_rules block">
+        <h1 class="title title_rule_stand">Наши правила</h1>
+        <div class="rules">
+            <div class="rule">
+                <div class="chips_number_big">01</div>
+                <h3 class="title_rule">
+                    Безопасность и здоровье превыше всего
+                </h3>
+                <p class="description_rule">
+                    Каждый инструктор обучен технике безопасности и будет внимательно
+                    руководить занятиями, чтобы не допустить появления травм
+                </p>
+            </div>
+            <div class="rule">
+                <div class="chips_number_big">02</div>
+                <h3 class="title_rule">
+                    Толерантность к каждому
+                </h3>
+                <p class="description_rule">
+                    Тренер не будет акцентировать внимание на вашем внешнем виде,
+                    весе и физической форме. Все комментарии исходящие от
+                    инструктора будут относиться только к выполнению асан
+                </p>
+                <p class="description_rule">
+                    У нас категорически запрещены любые формы дискриминации
+                    или неуважительного обращения
+                </p>
+            </div>
+            <div class="rule">
+                <div class="chips_number_big">03</div>
+                <h3 class="title_rule">
+                    Внимательность
+                </h3>
+                <p class="description_rule">
+                    Независимо от уровня физической подготовки,
+                    возраста, пола и веса, все участники получают одинаковое внимание со стороны тренера
+                </p>
+            </div>
+            <div class="rule">
+                <div class="chips_number_big">04</div>
+                <h3 class="title_rule">
+                    Посильная нагрузка
+                </h3>
+                <p class="description_rule">
+                    Самое главное внутреннее ощущение своего тела,
+                    поэтому если у участника не получается сделать
+                    сложную асану в первый раз, то тренер подскажет
+                    легкий вариант ее исполнения
+                </p>
+                <p class="description_rule">
+                    Так же тренер не будет насильно заставлять делать упражнение,
+                    которое у вас не получается
+                </p>
+            </div>
+            <div class="rule">
+                <div class="chips_number_big">05</div>
+                <h3 class="title_rule">
+                    Этика
+                </h3>
+                <p class="description_rule">
+                    Все наши тренеры доброжелательны и уважательно
+                    относятся к каждому участнику занятий
+                </p>
+            </div>
+            <!-- <img src="images/our_rules.jpg" alt="" class="img_rule"> -->
+            <div class="rules_img img_r_1"></div>
+        </div>
+    </div>
+
+    <!-- Блок "Наши тренировочные стандарты" -->
+
+    <div class="block_our_standards block">
+        <h1 class="title title_rule_stand">Наши тренировочные стандарты</h1>
+        <div class="rules">
+            <div class="rules_img img_r_2"></div>
+            <!-- <img src="images/stand.jpg" alt="" class="img_rule"> -->
+            <div class="rule">
+                <div class="chips_number_big">01</div>
+                <h3 class="title_rule">
+                    Разнообразие тарифов
+                </h3>
+                <p class="description_rule">
+                    Мы специализируемся на корпоративных занятиях, но так же у
+                    нас имеются персональные тарифы с индивидуальным сопровождением
+                </p>
+            </div>
+            <div class="rule">
+                <div class="chips_number_big">02</div>
+                <h3 class="title_rule">
+                    Квалифицированные сотрудники
+                </h3>
+                <p class="description_rule">
+                    Все сотрудники обладают квалифицированным образованием в сфере спорта и
+                    медицины, и также имеют большой опыт в сфере фитнеса и йоги
+                </p>
+                </p>
+            </div>
+            <div class="rule">
+                <div class="chips_number_big">03</div>
+                <h3 class="title_rule">
+                    Адаптация к индивидуальным потребностям
+                </h3>
+                <p class="description_rule">
+                    Каждый тренер акцентирует внимание на индивидуальные возможности участников
+                </p>
+            </div>
+            <div class="rule">
+                <div class="chips_number_big">04</div>
+                <h3 class="title_rule">
+                    Работа с дыханием и медитацией основа йоги
+                </h3>
+                <p class="description_rule">
+                    Практики дыхания помогают улучшить сознательно во время выполнения упражнений,
+                    и также успокоить ум и наполнить энергией тело
+                </p>
+            </div>
+            <div class="rule">
+                <div class="chips_number_big">05</div>
+                <h3 class="title_rule">
+                    Постепенная прогрессия
+                </h3>
+                <p class="description_rule">
+                    При систематичном посещении занятий практикующие смогут улучшить
+                    не только гибкость, но и внутреннее состояние души и разума
+                </p>
+            </div>
+            <img src="" alt="" class="img_our_standard">
+        </div>
+    </div>
+
+    <!-- Блок "Почему мы решили освещать эту тему?" -->
+
+    <div class="block_why block">
+        <h5 class="title_why_we">Почему мы решили освещать эту тему?</h5>
+        <p class="description_big">Все просто! Мы хотим создать такое сообщество
+            где каждый будет друг друга поддерживать.
+            Йога объединяет людей разных возрастов, пола и профессий,
+            создавая общество, основанное на заботе и взаимопомощи.</p>
+        <img src="images/heart.png" alt="" class="img_heart">
+    </div>
+
+    <!-- Блок "Как мы проводим наши занятия?" -->
+
+    <div class="block_our_classes block">
+        <h1 class="title">Как мы проводим наши занятия?</h1>
+        <div class="classes_content">
+            <div class="classes">
+                <div class="rule class">
+                    <div class="chips_number_small c_class">01</div>
+                    <h3 class="title_rule">
+                        Инструктаж по технике безопасности
+                    </h3>
+                </div>
+                <div class="rule class">
+                    <div class="chips_number_small c_class">02</div>
+                    <h3 class="title_rule">
+                        Знакомство и общение
+                    </h3>
+                    <p class="description_rule">
+                        Постановка целей на начало занятия
+                    </p>
+                </div>
+                <div class="rule class">
+                    <div class="chips_number_small c_class">03</div>
+                    <h3 class="title_rule">
+                        Выполнение упражнений
+                    </h3>
+                    <p class="description_rule">
+                        Демонстрируется выполнение упражнений тренерами
+                    </p>
+                    <p class="description_rule">
+                        Отслеживается выполнение упражнений участниками
+                    </p>
+                </div>
+                <div class="rule class">
+                    <div class="chips_number_small c_class">04</div>
+                    <h3 class="title_rule">
+                        Шавасана. Восстановление
+                    </h3>
+                    <p class="description_rule">
+                        Финальное упражнение, которое завершает занятие
+                    </p>
+                </div>
+            </div>
+            <div class="classes">
+                <img src="images/nail.png" alt="" class="img_our_classes">
+                <div class="block_specification spwx">
+                    <div class="specific ">*Для других услуг, не входящих в рамки тарифов,
+                        программа упражнений определяется индивидуально после
+                        пробного занятия</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок "Как мы выбираем специалистов?" -->
+
+    <div class="block_things block">
+        <h1 class="title">Как мы выбираем специалистов?</h1>
+        <div class="things">
+            <div class="block_specification thing_spec_1">
+                <div class="specific">
+                    Что должно быть у будущего тренера?
+                </div>
+            </div>
+            <div class="thing thing_1">
+                <div class="chips_number_small">01</div>
+                <h3 class="title_thing">
+                    Опыт в фитнесе <span class="colortext colortext_1">более 5 лет</span>
+                </h3>
+            </div>
+            <div class="thing thing_2">
+                <div class="chips_number_small">02</div>
+                <h3 class="title_thing">
+                    Спортивное или медицинское <span class="colortext colortext_2">образование</span>
+                </h3>
+            </div>
+            <div class="thing thing_3">
+                <div class="chips_number_small">03</div>
+                <h3 class="title_thing">
+                    <span class="colortext colortext_3">Сертификаты обучения,</span> повышения квалификации,
+                    международные дипломы
+                </h3>
+            </div>
+            <div class="block_specification thing_spec_2">
+                <div class="specific">
+                    Наша приверженность к разнообразию, качеству и инклюзивности
+                    – это наша сила и ключевой фактор успеха
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок "Что о нас говорят люди?" -->
+
+    <div class="block_reviews block">
+        <h1 class="title title_review">Что о нас говорят люди?</h1>
+        <div class="reviews_arrows">
+            <div class="arrow_left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 80 80" fill="none">
+                    <path
+                        d="M40 73.3337C58.4095 73.3337 73.3333 58.4098 73.3333 40.0003C73.3333 21.5908 58.4095 6.66699 40 6.66699C21.5905 6.66699 6.66663 21.5908 6.66663 40.0003C6.66663 58.4098 21.5905 73.3337 40 73.3337Z"
+                        stroke="#9A9A9A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M40 26.667L26.6666 40.0003L40 53.3337" stroke="#9A9A9A" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M53.3333 40H26.6666" stroke="#9A9A9A" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <div class="avatar_name_st">
+                        <img src="images/reviews/avatar_1.png" alt="" class="avatar">
+                        <p class="name">Юлия</p>
+                        <div class="chosed_tafiff">Индивидуальные занятия</div>
+                    </div>
+                    <p class="text_review">
+                        На мое большое счастье, я недавно имела возможность принять
+                        индивидуальное занятие йогой с профессиональным тренером.
+                        Это был непревзойденный опыт!
+                    </p>
+                </div>
+                <div class="review">
+                    <div class="avatar_name_st">
+                        <img src="images/reviews/avatar_2.png" alt="" class="avatar">
+                        <p class="name">Екатерина</p>
+                        <div class="chosed_tafiff">Корпоративные занятия</div>
+                    </div>
+                    <p class="text_review">
+                        Стала замечать за собой, что энергии стало не хватать, после работы ничего не хочется, и все
+                        время хочется спать
+                        Думала, что йога это обычная растяжка, гимнастика и не более.
+                        Но! После первого занятия я почувствовала такую легкость во всем теле, и неизвестно как, но
+                        настроение
+                        стало лучше, до дома я допархала пешком (на каблуках впервые за несколько лет),
+                        исчезла раздражительность, которую я наблюдала каждый день после работы.
+                    </p>
+                </div>
+                <div class="review review_3">
+                    <div class="avatar_name_st">
+                        <img src="images/reviews/avatar_3.png" alt="" class="avatar">
+                        <p class="name">Вероника</p>
+                        <div class="chosed_tafiff">Гвоздестояние</div>
+                    </div>
+                    <p class="text_review">
+                        После практики уже через несколько дней у меня стабилизировалось эмоциональное состояние.
+                        Появилось ощущение, что я увидела, всю свою жизнь со стороны, не только мои обиды, но и свои
+                        недостатки, свои слабые места,
+                        я поняла, что сама закрутилась в эту воронку событий последних лет,
+                        потому, что была слабой и беспомощной, надо было работать над силой воли, а не погружаться в
+                        пучину слобоволия .
+                    </p>
+                </div>
+            </div>
+            <div class="arrow_right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 80 80" fill="none">
+                    <path
+                        d="M40 73.3337C58.4095 73.3337 73.3333 58.4098 73.3333 40.0003C73.3333 21.5908 58.4095 6.66699 40 6.66699C21.5905 6.66699 6.66666 21.5908 6.66666 40.0003C6.66666 58.4098 21.5905 73.3337 40 73.3337Z"
+                        stroke="#423C3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M40 53.3337L53.3333 40.0003L40 26.667" stroke="#423C3A" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M26.6667 40H53.3333" stroke="#423C3A" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок "Оставьте свой отзыв" -->
+
+    <div class="block_leave_a_review block">
+        <img src="images/leave_a_review.png" alt="" class="img_leave_a_review">
+        <div class="title_leave_a_review">
+            <h2 class="title_leave_a">
+                Помогите нам стать лучше, оставьте свой отзыв и мы опубликуем его на сайте
+            </h2>
+        </div>
+        <div class="wrapper">
+            <form action method="post" id="formId" autocomplete="on">
+                <div class="input_field">
+                    <input type="text" id="fio" name="fio_review" required placeholder="Ваше Имя*">
+                </div>
+                <div class="input_field">
+                    <input type="email" id="email" name="email_review" required placeholder="Ваш email*"
+                        autocomplete="off">
+                </div>
+                <div class="input_field input_review">
+                    <textarea name="text_review" id="" cols="30" rows="10" required
+                        placeholder="Текст отзыва"></textarea>
+                </div>
+                <div class="checkbox">
+                    <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="red"
+                        required="required">
+                    <label for="color-1">Я согласен с политикой конфиденциальности</label>
+                </div>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
+
+
+    </div>
+    </div>
+
+    <!-- Блок "Хотите работать с нами?" -->
+
+    <div class="block_join_us block">
+        <h1 class="title">Хотите работать с нами?</h1>
+        <h2 class="title_join_us title_leave_a ">
+            Заполните анкету и наш менеджер свяжется с вами
+        </h2>
+        <div class="wrapper">
+            <form action="" method="post" autocomplete="on">
+                <div class="fields">
+                    <div class="input_fields">
+                        <div class="input_field">
+                            <input type="text" id="fio_join_us" required placeholder="Ваше Имя*">
+                        </div>
+                        <div class="input_field">
+                            <input type="email" id="email_2" name="email_join_us" required placeholder="Ваш email*"
+                                autocomplete="off">
+                        </div>
+                        <select id="vacancies" name="vacanc">
+                            <option selected="selected">Кем хотите быть
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10"
+                                    fill="none" class="caret">
+                                    <path d="M1 1L9 9L17 1" stroke="#423C3A" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </option>
+                            <option value="nail">Тренер по гвоздестоянию</option>
+                            <option value="massage">Массажист</option>
+                            <option value="yoga">Йога-тренер</option>
+                        </select>
+                    </div>
+                    <div class="input_field input_review input_resume">
+                        <textarea name="text_resume" id="" cols="30" rows="10" required
+                            placeholder="Сопроводительное письмо"></textarea>
+
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <input class="custom-checkbox" type="checkbox" id="color-2" name="color-2" value="red"
+                        required="required">
+                    <label for="color-2">Я согласен с политикой конфиденциальности</label>
+                </div>
+                <button type="submit" class="btn btn_join_us">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Блок "Мы открыты к любому сотрудничеству" -->
+
+    <div class="block_for_partnership block">
+        <div class="title_desk_partnership">
+            <h1 class="title">Мы открыты к любому сотрудничеству</h1>
+            <p class="description_email title_leave_a">yogakoka@mail.ru</p>
+        </div>
+        <div class="wrapper wrapper_partnership">
+            <form action method="post" id="formId" autocomplete="on">
+                <div class="input_field">
+                    <input type="text" id="fio_3" name="fio_partnership" required placeholder="Ваше Имя*">
+                </div>
+                <div class="input_field">
+                    <input type="email" id="email_3" name="email_partnership" required placeholder="Ваш email*"
+                        autocomplete="off">
+                </div>
+                <div class="input_field input_review">
+                    <textarea name="text_partnership" id="" cols="30" rows="10" required
+                        placeholder="Опишите ваше предложение"></textarea>
+                </div>
+                <div class="checkbox">
+                    <input class="custom-checkbox" type="checkbox" id="color-3" name="color-3" value="red"
+                        required="required">
+                    <label for="color-3">Я согласен с политикой конфиденциальности</label>
+                </div>
+                <button type="submit" class="btn">Оставить предложение</button>
+            </form>
+        </div>
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer_content">
+            <div class="footer_row">
+                <div class="footer_contacts">
+                    <h4 class="footer_title">Контакты</h4>
+                    <ul class="footer_contacts_list footer_list">
+                        <li>
+                            <img src="images/icons/tg_icon.svg" alt="tg" class="img_footer_normal">
+                            <img src="images/icons/tg_icon_small.svg" alt="tg" class="img_footer_small">
+                            <a href="https://t.me/yoga_koka">@yoga_koka</a>
+                        </li>
+                        <li>
+                            <img src="images/icons/vc_icon.svg" alt="vc" class="img_footer_normal">
+                            <img src="images/icons/vc_icon_small.svg" alt="tg" class="img_footer_small">
+                            <a href="https://vk.com/yogakoka">Группа вконтакте</a>
+                        </li>
+                        <li>
+                            <img src="images/icons/email_icon.svg" alt="mail" class="img_footer_normal">
+                            <img src="images/icons/email_icon_small.svg" alt="tg" class="img_footer_small">
+                            <a href="">yogakoka@gmail.com</a>
+                        </li>
+                        <li>
+                            <img src="images/icons/phone_icon.svg" alt="phone" class="img_footer_normal">
+                            <img src="images/icons/phone_icon_small.svg" alt="tg" class="img_footer_small">
+                            <a href="">8 800 555 35 35</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_menu">
+                    <h4 class="footer_title">Меню</h4>
+                    <ul class="footer_list_menu footer_list">
+                        <li><a href="main_page.html" class="footer_item">Главная</a></li>
+                        <li><a href="tariffs.html" class="footer_item">Тарифы</a></li>
+                        <li><a href="about_us.html" class="footer_item">О нас</a></li>
+                    </ul>
+                </div>
+                <div class="footer_tariff">
+                    <h4 class="footer_title">Тарифы</h4>
+                    <ul class="footer_tariff_list footer_list">
+                        <li><a href="tariffs.html#anchor_corporate">Корпоративные занятия</a></li>
+                        <li><a href="tariffs.html#anchor_nail">Гвоздестояние</a></li>
+                        <li><a href="tariffs.html#anchor_dop_services">Дополнительные услуги</a></li>
+                    </ul>
+                </div>
+                <div class="footer_any_questions">
+                    <h4 class="footer_title">Остались вопросы?</h4>
+                    <p class="footer_p">
+                        Напишите нам, мы ответим
+                        на интересующие вопросы
+                    </p>
+                    <button class="footer_button">Задать вопрос</button>
+                </div>
+            </div>
+
+            <div class="break_line"></div>
+
+
+            <ul class="footer_atoms footer_list">
+                <li><img src="images/logo.svg" class="footer_logo" alt="logo_company" type="image/svg+xml"></li>
+                <li>2023 © Все права защищены</li>
+                <li>Договор оферты</li>
+                <li>Служба поддержки</li>
+                <li>Разработка сайта</li>
+                <li>Дизайн сайта</li>
+            </ul>
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
+    <script src="js/script.js"></script>
+    <script src="js/modal_window.js"></script>
+    <script src="js/scr.js"></script>
+</body>
+
+</html>

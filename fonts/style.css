@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Zen Antique';
+    src: local('Zen Antique Regular'), local('Zen-Antique-Regular'),
+        url('ZenAntique-Regular.woff2') format('woff2'),
+        url('ZenAntique-Regular.woff') format('woff'),
+        url('ZenAntique-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
