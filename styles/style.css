@@ -735,6 +735,8 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 64px;
+
+    align-items: center;
 }
 
 .classes_content {
@@ -1314,6 +1316,14 @@ form select {
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
+}
+
+.title_rule_stand {
+    text-align: center;
+}
+
+.rules {
+    justify-content: center;
 }
 
 @media (max-width: 1654px) {
